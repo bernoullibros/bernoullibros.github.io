@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Welcome!"
+date:   2026-10-20 14:06:38 +0100
+categories: update
+---
+Welcome to the Bernoulli Bros website!
+
+This is still in development, but we look forward to an exciting future together.
