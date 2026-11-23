@@ -1,0 +1,43 @@
+<div class="header">
+<a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+  <img src="{{ '/assets/logo.jpg' | relative_url }}" alt="Logo" style="height: 80px; width: 100px; vertical-align: middle; margin-right: 10px;">
+  {{ site.title | escape }}
+</a>
+
+ <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+
+    <!-- Navigation Menu Wrapper -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="{{ '/' | relative_url }}" class="nav-item">Home</a>
+      <a href="{{ '/about/' | relative_url }}" class="nav-item">About</a>
+      <a href="{{ '/#stem' | relative_url }}" class="nav-item">What is STEM racing?</a>
+      <a href="{{ '/#members' | relative_url }}" class="nav-item">Members</a>
+      <a href="{{ '/#contact' | relative_url }}" class="nav-item">Contact</a>
+    </nav>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+      const navItems = document.querySelectorAll('.nav-item');
+
+    menuToggle.addEventListener('click', () => {
+      // Toggle CSS selection classes to trigger transformations
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+     navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  });
+</script>
+

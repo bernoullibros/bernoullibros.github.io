@@ -1,0 +1,34 @@
+---
+layout: page
+title: Home
+---
+<div class="content">
+<div class="card stem-racing" id="stem">
+  <h3>What is STEM Racing UK?</h3>
+  <p>
+STEM Racing is chance for teams to design, analyse, build, and test miniature F1 models. These models will be powered by CO2 cartridges and teams must find ways to make an aerodynamic car. Not only will this competition test teams’ engineering ability but also their brand identity, ability to find sponsors and project management skills. Bernoulli Bros will be competing in the <a style="display:inline !important;" href="https://www.stemracing.co.uk/upcomingevents/londonwestsecondary">regional finals - London West</a> in February as a part of the development class. 
+</p>
+</div>
+
+<ul class="post-list card">
+  {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}">
+    
+      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+      <div > - {{ post.title }}</div>
+    </a>
+  {% endfor %}
+</ul>
+<div class="card members" id="members" style="display: inline !important;">
+  <h3>Meet our members</h3>
+Bernoulli Bros is a team of 6 students and a staff member from Reading School, Berkshire, who are all in year 12. Whilst all members have an equal say in the decision-making process, each person is especially responsible for a specific element of the project: 
+  <div class = "grid">
+<div class="member">Project Manager: Abhiram Gandluri</div>
+<div class="member">Sponsorship and Marketing Lead: Bhrugu Hanasoge</div>
+<div class="member">Graphics Design Lead: Joel Abbi</div>
+<div class="member">Finance Management Lead: Michael Tovell</div>
+<div class="member">Design Engineering Lead: Noah Verster</div>
+<div class="member">Manufacturing Engineering Lead: Paul Tovell</div>
+  </div>
+</div>
+</div>

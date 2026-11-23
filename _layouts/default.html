@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+</head>
+<body>
+
+  <!-- This pulls in your custom header file -->
+  {% include header.html %}
+
+  <main>
+    <!-- This injects the markdown content from index.md or about.md -->
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>
+
